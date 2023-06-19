@@ -7,23 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9269A05829E5CFB500E28EDD /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9269A05729E5CFB500E28EDD /* VisualEffectView.swift */; };
 		929F275B2991712F0042F7B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F275A2991712F0042F7B8 /* AppDelegate.swift */; };
 		929F275D2991712F0042F7B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F275C2991712F0042F7B8 /* SceneDelegate.swift */; };
-		929F275F2991712F0042F7B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F275E2991712F0042F7B8 /* ViewController.swift */; };
-		929F27622991712F0042F7B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929F27602991712F0042F7B8 /* Main.storyboard */; };
+		929F275F2991712F0042F7B8 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F275E2991712F0042F7B8 /* StatisticsViewController.swift */; };
 		929F2764299171300042F7B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929F2763299171300042F7B8 /* Assets.xcassets */; };
 		929F2767299171300042F7B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929F2765299171300042F7B8 /* LaunchScreen.storyboard */; };
+		929F276F299173060042F7B8 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F276E299173060042F7B8 /* StatisticsViewModel.swift */; };
+		929F2773299175100042F7B8 /* ContinentsStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F2772299175100042F7B8 /* ContinentsStatistics.swift */; };
+		929F2776299175A40042F7B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F2775299175A40042F7B8 /* NetworkManager.swift */; };
+		929F2779299175F50042F7B8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 929F2778299175F50042F7B8 /* Alamofire */; };
+		929F277D299177EE0042F7B8 /* GeneralStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F277C299177EE0042F7B8 /* GeneralStatisticsViewController.swift */; };
+		929F277F299178090042F7B8 /* GeneralStatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F277E299178090042F7B8 /* GeneralStatisticsViewModel.swift */; };
+		929F278329917EFE0042F7B8 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F278229917EFE0042F7B8 /* Extension + UIView.swift */; };
+		92DA98D02A1A72FE006DDF46 /* ContinentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA98CF2A1A72FE006DDF46 /* ContinentCell.swift */; };
+		92DA98D22A1A7324006DDF46 /* ContinentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA98D12A1A7324006DDF46 /* ContinentsViewModel.swift */; };
+		92DEB11D29E1635A003946E3 /* CountryStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEB11C29E1635A003946E3 /* CountryStatisticsViewController.swift */; };
+		92DEB11F29E1673A003946E3 /* CountryStatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEB11E29E1673A003946E3 /* CountryStatisticsViewModel.swift */; };
+		92ED1E372A40BD0000C82C0E /* CountriesStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1E362A40BD0000C82C0E /* CountriesStatistics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9269A05729E5CFB500E28EDD /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		929F27572991712F0042F7B8 /* COVID-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		929F275A2991712F0042F7B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		929F275C2991712F0042F7B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		929F275E2991712F0042F7B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		929F27612991712F0042F7B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		929F275E2991712F0042F7B8 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		929F2763299171300042F7B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		929F2766299171300042F7B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		929F2768299171300042F7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929F276E299173060042F7B8 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		929F2772299175100042F7B8 /* ContinentsStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsStatistics.swift; sourceTree = "<group>"; };
+		929F2775299175A40042F7B8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		929F277C299177EE0042F7B8 /* GeneralStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStatisticsViewController.swift; sourceTree = "<group>"; };
+		929F277E299178090042F7B8 /* GeneralStatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralStatisticsViewModel.swift; sourceTree = "<group>"; };
+		929F278229917EFE0042F7B8 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		92DA98CF2A1A72FE006DDF46 /* ContinentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentCell.swift; sourceTree = "<group>"; };
+		92DA98D12A1A7324006DDF46 /* ContinentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsViewModel.swift; sourceTree = "<group>"; };
+		92DEB11C29E1635A003946E3 /* CountryStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatisticsViewController.swift; sourceTree = "<group>"; };
+		92DEB11E29E1673A003946E3 /* CountryStatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatisticsViewModel.swift; sourceTree = "<group>"; };
+		92ED1E362A40BD0000C82C0E /* CountriesStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesStatistics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929F2779299175F50042F7B8 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +80,114 @@
 		929F27592991712F0042F7B8 /* COVID-19 */ = {
 			isa = PBXGroup;
 			children = (
-				929F275A2991712F0042F7B8 /* AppDelegate.swift */,
-				929F275C2991712F0042F7B8 /* SceneDelegate.swift */,
-				929F275E2991712F0042F7B8 /* ViewController.swift */,
-				929F27602991712F0042F7B8 /* Main.storyboard */,
-				929F2763299171300042F7B8 /* Assets.xcassets */,
-				929F2765299171300042F7B8 /* LaunchScreen.storyboard */,
-				929F2768299171300042F7B8 /* Info.plist */,
+				929F2771299174E80042F7B8 /* Models */,
+				929F2770299173110042F7B8 /* Statistics */,
+				92ED1E3B2A40C7BB00C82C0E /* Extensions */,
+				92ED1E3A2A40C6BB00C82C0E /* Storyboard */,
+				92ED1E392A40C68200C82C0E /* Resources */,
+				92ED1E382A40C65E00C82C0E /* Supporting Files */,
+				929F27742991758B0042F7B8 /* Services */,
 			);
 			path = "COVID-19";
+			sourceTree = "<group>";
+		};
+		929F2770299173110042F7B8 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				929F275E2991712F0042F7B8 /* StatisticsViewController.swift */,
+				929F276E299173060042F7B8 /* StatisticsViewModel.swift */,
+				92DA98CE2A1A72E2006DDF46 /* Continents */,
+				929F277A299177A30042F7B8 /* GeneralStatistics */,
+				929F277B299177B90042F7B8 /* CountriesStatistics */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		929F2771299174E80042F7B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				929F2772299175100042F7B8 /* ContinentsStatistics.swift */,
+				92ED1E362A40BD0000C82C0E /* CountriesStatistics.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		929F27742991758B0042F7B8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				929F2775299175A40042F7B8 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		929F277A299177A30042F7B8 /* GeneralStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				929F277C299177EE0042F7B8 /* GeneralStatisticsViewController.swift */,
+				929F277E299178090042F7B8 /* GeneralStatisticsViewModel.swift */,
+			);
+			path = GeneralStatistics;
+			sourceTree = "<group>";
+		};
+		929F277B299177B90042F7B8 /* CountriesStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				92DEB11C29E1635A003946E3 /* CountryStatisticsViewController.swift */,
+				92DEB11E29E1673A003946E3 /* CountryStatisticsViewModel.swift */,
+			);
+			path = CountriesStatistics;
+			sourceTree = "<group>";
+		};
+		92DA98CE2A1A72E2006DDF46 /* Continents */ = {
+			isa = PBXGroup;
+			children = (
+				92DA98CF2A1A72FE006DDF46 /* ContinentCell.swift */,
+				92DA98D12A1A7324006DDF46 /* ContinentsViewModel.swift */,
+			);
+			path = Continents;
+			sourceTree = "<group>";
+		};
+		92ED1E382A40C65E00C82C0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				929F275A2991712F0042F7B8 /* AppDelegate.swift */,
+				929F275C2991712F0042F7B8 /* SceneDelegate.swift */,
+				929F2768299171300042F7B8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92ED1E392A40C68200C82C0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				929F2763299171300042F7B8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		92ED1E3A2A40C6BB00C82C0E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				929F2765299171300042F7B8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		92ED1E3B2A40C7BB00C82C0E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92ED1E3C2A40C7C500C82C0E /* UIView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		92ED1E3C2A40C7C500C82C0E /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				9269A05729E5CFB500E28EDD /* VisualEffectView.swift */,
+				929F278229917EFE0042F7B8 /* Extension + UIView.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +206,9 @@
 			dependencies = (
 			);
 			name = "COVID-19";
+			packageProductDependencies = (
+				929F2778299175F50042F7B8 /* Alamofire */,
+			);
 			productName = "COVID-19";
 			productReference = 929F27572991712F0042F7B8 /* COVID-19.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 929F274E2991712F0042F7B8;
+			packageReferences = (
+				929F2777299175F50042F7B8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 929F27582991712F0042F7B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +256,6 @@
 			files = (
 				929F2767299171300042F7B8 /* LaunchScreen.storyboard in Resources */,
 				929F2764299171300042F7B8 /* Assets.xcassets in Resources */,
-				929F27622991712F0042F7B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +266,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				929F275F2991712F0042F7B8 /* ViewController.swift in Sources */,
+				929F277F299178090042F7B8 /* GeneralStatisticsViewModel.swift in Sources */,
+				9269A05829E5CFB500E28EDD /* VisualEffectView.swift in Sources */,
+				929F2776299175A40042F7B8 /* NetworkManager.swift in Sources */,
+				92DEB11F29E1673A003946E3 /* CountryStatisticsViewModel.swift in Sources */,
+				92DA98D22A1A7324006DDF46 /* ContinentsViewModel.swift in Sources */,
+				929F275F2991712F0042F7B8 /* StatisticsViewController.swift in Sources */,
 				929F275B2991712F0042F7B8 /* AppDelegate.swift in Sources */,
 				929F275D2991712F0042F7B8 /* SceneDelegate.swift in Sources */,
+				92DEB11D29E1635A003946E3 /* CountryStatisticsViewController.swift in Sources */,
+				92DA98D02A1A72FE006DDF46 /* ContinentCell.swift in Sources */,
+				92ED1E372A40BD0000C82C0E /* CountriesStatistics.swift in Sources */,
+				929F278329917EFE0042F7B8 /* Extension + UIView.swift in Sources */,
+				929F2773299175100042F7B8 /* ContinentsStatistics.swift in Sources */,
+				929F276F299173060042F7B8 /* StatisticsViewModel.swift in Sources */,
+				929F277D299177EE0042F7B8 /* GeneralStatisticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		929F27602991712F0042F7B8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				929F27612991712F0042F7B8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		929F2765299171300042F7B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +421,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R79LXPU844;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "COVID-19/Info.plist";
+				INFOPLIST_FILE = "COVID-19/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +449,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R79LXPU844;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "COVID-19/Info.plist";
+				INFOPLIST_FILE = "COVID-19/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +490,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		929F2777299175F50042F7B8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		929F2778299175F50042F7B8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 929F2777299175F50042F7B8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 929F274F2991712F0042F7B8 /* Project object */;
 }
