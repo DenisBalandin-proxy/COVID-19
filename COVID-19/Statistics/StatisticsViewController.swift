@@ -18,9 +18,6 @@ final class StatisticsViewController: UIViewController {
     private var collectionViewForStatistics: UICollectionView!
     private var collectionViewForCountries: UICollectionView!
     
-   // private let width = UIScreen.main.bounds.size.width
-   // private let height = UIScreen.main.bounds.size.height
-    
     private var selectedCell = 0
     
     private var viewModel: StatisticsViewModelProtocol! {
