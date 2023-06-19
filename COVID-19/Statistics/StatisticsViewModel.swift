@@ -23,7 +23,7 @@ protocol StatisticsViewModelProtocol {
 // MARK: - Statistics View Model
 final class StatisticsViewModel: StatisticsViewModelProtocol {
     
-    // MARK: - Public Properties
+    // MARK: Public Properties
     var continent: Int = 0
     
     // MARK: - Private Properties
@@ -68,8 +68,8 @@ final class StatisticsViewModel: StatisticsViewModelProtocol {
         countries.count
     }
     
-    func getGeneralStatisticsCellViewModel(at intexPath: IndexPath) -> GeneralStatisticsViewModelProtocol {
-        GeneralStatisticsViewModel(statistics: covidStatistics[continent], index: intexPath)
+    func getGeneralStatisticsCellViewModel(at indexPath: IndexPath) -> GeneralStatisticsViewModelProtocol {
+        GeneralStatisticsViewModel(statistics: covidStatistics[continent], index: indexPath)
     }
     
     func getCountryStatisticsViewModel(at indexPath: IndexPath) -> CountryStatisticsViewModelProtocol {

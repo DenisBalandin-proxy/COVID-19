@@ -9,14 +9,16 @@ import UIKit
 
 final class StatisticsViewController: UIViewController {
     
-    // MARK: - Private Properties
-    private var stackViewForCollections: UIStackView!
+    // MARK: - Private Views
+    private lazy var stackViewForCollections = setupStackForCollection()
     
-    private var blurView: UIVisualEffectView!
+    private lazy var blurView = setupBlurView()
     
-    private var collectionViewForContinents: UICollectionView!
-    private var collectionViewForStatistics: UICollectionView!
-    private var collectionViewForCountries: UICollectionView!
+    private lazy var collectionViewForContinents = setupCollectionViewForContinents()
+    private lazy var collectionViewForStatistics = setupCollectionViewForStatistics()
+    private lazy var collectionViewForCountries = setupCollectionViewForCountries()
+    
+    // MARK: Private Properties
     
     private var selectedCell = 0
     
@@ -37,29 +39,13 @@ final class StatisticsViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        
-        viewModel = StatisticsViewModel()
-        
-        title = "COVID-19"
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            title: "Refresh",
-            style: .plain,
-            target: self,
-            action: #selector(reloadCells)
-        )
+        setupNavBar()
+        setupDelegates()
         
         view.addVerticalGradientLayer()
+        title = "COVID-19"
         
-        collectionViewForContinents.dataSource = self
-        collectionViewForContinents.delegate = self
-        
-        collectionViewForCountries.dataSource =  self
-        collectionViewForCountries.delegate = self
-        
-        collectionViewForStatistics.dataSource = self
-        collectionViewForStatistics.delegate = self
+        viewModel = StatisticsViewModel()
     }
     
     override func viewDidLayoutSubviews() {
@@ -118,7 +104,28 @@ final class StatisticsViewController: UIViewController {
         ])
     }
     
-    //MARK: - Private Methods @objc
+    private func setupNavBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Refresh",
+            style: .plain,
+            target: self,
+            action: #selector(reloadCells)
+        )
+    }
+    
+    private func setupDelegates() {
+        collectionViewForContinents.dataSource = self
+        collectionViewForContinents.delegate = self
+        
+        collectionViewForCountries.dataSource =  self
+        collectionViewForCountries.delegate = self
+        
+        collectionViewForStatistics.dataSource = self
+        collectionViewForStatistics.delegate = self
+    }
+    
+    //MARK: Private Methods @objc
     @objc private func reloadCells() {
         collectionViewForStatistics.reloadData()
     }

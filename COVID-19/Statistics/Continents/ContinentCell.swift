@@ -7,38 +7,31 @@
 
 import UIKit
 
-// MARK: Collection Cell Auto Layout Protocol
-protocol CollectionCellAutoLayoutProtocol {
-    var cachedSize: CGSize? { get set }
-}
-
-// MARK: - Continents View Controller
-final class ContinentCell: UICollectionViewCell, CollectionCellAutoLayoutProtocol {
+final class ContinentCell: UICollectionViewCell {
         
     // MARK: - Static Properties
     static let cellIdentifireForContinent = "CellForContinents"
     
-    // MARK: - Public Properties
+    // MARK: Public Properties
     var viewModel: ContinentViewModelProtocol! {
         didSet {
-            setupUI()
             labelContinent.text = viewModel.continent
         }
     }
-    
-    var cachedSize: CGSize?
     
     // MARK: - Private Properties
     private var visualView = VisualEffect()
     private var blurView: UIVisualEffectView!
     private var labelContinent: UILabel!
     
-    // MARK: - Life Cycle Methods
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        
-        blurView.removeFromSuperview()
-        blurView = visualView.setBlurView()
+    // MARK: - Init
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - Public Functions

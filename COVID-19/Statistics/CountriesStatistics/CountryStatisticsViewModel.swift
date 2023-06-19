@@ -16,10 +16,9 @@ protocol CountryStatisticsViewModelProtocol {
     init(country: Countries)
 }
 
-// MARK: - Country Statistics View Model
 final class CountryStatisticsViewModel: CountryStatisticsViewModelProtocol {
     
-    //MARK: - Public Properties
+    //MARK: Public Properties
     var countryName: String {
         country.country
     }
@@ -32,7 +31,7 @@ final class CountryStatisticsViewModel: CountryStatisticsViewModelProtocol {
         country.todayDeaths
     }
     
-    // MARK: - Private Properties
+    // MARK: Private Properties
     private let country: Countries
     
     // MARK: - Initializers

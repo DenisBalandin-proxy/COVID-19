@@ -33,7 +33,7 @@ final class GeneralStatisticsViewModel: GeneralStatisticsViewModelProtocol {
         }
     }
     
-    // MARK: - Private Properties
+    // MARK: Private Properties
     private let statistics: Coronavirus
     private let index: IndexPath
     

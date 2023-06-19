@@ -15,17 +15,17 @@ enum NetworkError: Error {
 }
 
 enum Link: String {
-    case covidYesterday = "https://corona.lmao.ninja/v2/countries?yesterday=null&sort=null"
-    case continents = "https://corona.lmao.ninja/v2/continents?yesterday=null&sort=null"
+    case covidYesterday = "link1"
+    case continents = "link2"
 }
 
 // MARK: - Network Manager
 final class NetworkManager {
     
-    //MARK: - Static Properties
+    //MARK: Static Properties
     static let shared = NetworkManager()
     
-    //MARK: - Private Initializers
+    //MARK: Private Initializers
     private init() {}
     
     // MARK: - Public Methods

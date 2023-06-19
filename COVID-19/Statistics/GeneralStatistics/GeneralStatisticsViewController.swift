@@ -12,7 +12,7 @@ final class GeneralStatisticsViewController: UICollectionViewCell {
     // MARK: - Static Properties
     static let cellIdentifireForStatistics = "CellForStatistics"
     
-    // MARK: - Public Properties
+    // MARK: Public Properties
     var viewModel: GeneralStatisticsViewModelProtocol! {
         didSet {
             setupUI()
@@ -21,11 +21,11 @@ final class GeneralStatisticsViewController: UICollectionViewCell {
         }
     }
         
-    // MARK: - Private Properties
-    private var labelTitle: UILabel!
-    private var labelValue: UILabel!
+    // MARK: Private Properties
+    private lazy var labelTitle = setupTitleLabel()
+    private lazy var labelValue = setupValueLabel()
     
-    private var shadowView: UIView!
+    private lazy var shadowView = UIView()
     
     // MARK: - Life Cycle Methods
     override func layoutSubviews() {
@@ -38,7 +38,6 @@ final class GeneralStatisticsViewController: UICollectionViewCell {
     private func setupUI() {
         labelTitle = setupTitleLabel()
         labelValue = setupValueLabel()
-        shadowView = UIView()
 
         TAMIC()
         addSubviews()

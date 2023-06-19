@@ -16,15 +16,15 @@ protocol ContinentViewModelProtocol {
 // MARK: - Continent View Model
 final class ContinentViewModel: ContinentViewModelProtocol {
     
-    // MARK: - Public Properties
+    // MARK: Public Properties
     var continent: String {
         covid.continent
     }
     
-    // MARK: - Private Properties
+    // MARK: Private Properties
     private var covid: Coronavirus
     
-    // MARK: - Initializers
+    // MARK: Initializers
     init(statistics: Coronavirus) {
         covid = statistics
     }

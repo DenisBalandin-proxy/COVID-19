@@ -12,37 +12,43 @@ final class CountryStatisticsViewController: UICollectionViewCell {
     // MARK: - Static Properties
     static let cellIdentifireForStatistics = "CellForCountries"
     
-    // MARK: - Public Properties
+    // MARK: Public Properties
     var viewModel: CountryStatisticsViewModelProtocol! {
         didSet {
-            setupUI()
             labelCountry.text = viewModel.countryName
         }
     }
     
     //MARK: - Private Properties
-    private var visualView = VisualEffect()
-    private var blurView: UIVisualEffectView!
-    
-    private var labelCountry: UILabel!
-    
-    //MARK: - Life Cycle Methods
-    override func prepareForReuse() {
-      super.prepareForReuse()
+    private lazy var blurView: UIVisualEffectView = {
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+        blurredEffectView.translatesAutoresizingMaskIntoConstraints = false
         
-        blurView.removeFromSuperview() //remove before reuse
-        blurView = visualView.setBlurView()
+        return blurredEffectView
+    }()
+    
+    private lazy var labelCountry: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.numberOfLines = 4
+        
+        return label
+    }()
+    
+    // MARK: - Init
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     //MARK: - Private Methods
     private func setupUI() {
-        blurView = visualView.setBlurView()
         blurView.layer.cornerRadius = 30
-        
-        let countryLabel = UILabel(frame: .zero)
-        countryLabel.textAlignment = .center
-        countryLabel.numberOfLines = 4
-        labelCountry = countryLabel
         
         TAMIC()
         addSubviews()
