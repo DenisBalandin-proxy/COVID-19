@@ -1,4 +1,4 @@
-# COVID-19
+# COVID-19 Demo
 
 Приложение для просмотра статистики COVID-19.
 Stack: Swift, UIKit, MVVM, Alamofire
