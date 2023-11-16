@@ -14,7 +14,7 @@ enum NetworkError: Error {
     case decodingError
 }
 
-enum Link: String {
+private enum Link: String {
     case covidYesterday = "link1"
     case continents = "link2"
 }
